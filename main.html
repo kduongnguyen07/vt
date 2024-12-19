@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FROM VAN THINH</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="portfolio-container">
+            <div class="card">
+                <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/469999322_1108881587283892_3008290389248540148_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=y2YHtxz4MEYQ7kNvgEohvt5&_nc_oc=Adj4HsY4RS5ca2SROke80MAO-acu8zHh_eEfxFzkMbFHdad93KxpqaExNvP_vrOgqFFVz6r6FEt9IrsvaGFfJ8bK&_nc_zt=23&_nc_ht=scontent.fhan14-3.fna&_nc_gid=A6aAptsE1IAynyJY-xOIG9I&oh=00_AYDNpQ-_hZ7sYvRYuy-KS0zQqucJSlUH96Cy-TQlx4Jqsw&oe=676A0DEF" alt="Project 1">
+                <div class="card-content">
+                    <h2>Văn Thịnh</h2>
+                    <a href="https://www.facebook.com/profile.php?id=100044861836111/">Trang cá nhân</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://phenikaa.edu.vn/wp-content/uploads/2019/02/dai-hoc-phenikaa-03.jpg" alt="Project 2">
+                <div class="card-content">
+                    <h2>Trường Đại Học Phenikaa</h2>
+                    <a href="https://phenikaa-uni.edu.vn/vi">Xem ngay</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://media.discordapp.net/attachments/1090895809098289185/1313854612402470994/taoanhdep_nang_cap_anh_47555.jpg?ex=67598ef5&is=67583d75&hm=3ff0a0edd7bd8a05c81ade67e82ac9326bf5786b0414aeb33ea22ec201656dc1&=&format=webp&width=1193&height=671");
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    background-size: 100% auto; /* Ảnh nền chiếm 25% chiều rộng của màn hình */
+    background-position: center center; /* Canh giữa ảnh nền */
+    background-attachment: fixed; /* Giữ ảnh nền cố định khi cuộn */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Chiếm toàn bộ chiều cao của màn hình */
+    padding: 20px;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+    width: 100%;
+    max-width: 1400px; /* Đảm bảo không bị rộng quá */
+}
+
+.card {
+    display: flex; /* Sử dụng flexbox để căn chỉnh ảnh và nội dung */
+    flex-direction: row; /* Hiển thị ảnh và nội dung theo chiều ngang */
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Thêm nền mờ cho thẻ */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px; /* Chiều rộng thẻ */
+    height: 300px; /* Chiều cao thẻ */
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card img {
+    width: 30%; /* Chiếm 30% chiều rộng thẻ */
+    height: 100%; /* Chiều cao đầy đủ */
+    object-fit: cover; /* Giữ tỉ lệ ảnh */
+}
+
+.card-content {
+    padding: 20px;
+    width: 70%; /* Nội dung chiếm 70% chiều rộng */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card h2 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.card h2:hover {
+    color: #3c3ac4;
+}
+
+.card p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.card p:hover {
+    font-size: 1.2rem;
+    color: rgb(119, 192, 50);
+}
+
+.card a {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #3c3ac4;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.card:hover {
+    z-index: 1;
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+</style>
+</html>
